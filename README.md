@@ -10,8 +10,8 @@ This is a MVC architecture based application where controller returns a page wit
 Checkout the repo and move to the directory
 
 ```
-git clone https://github.com/emmanuelogar/spring-boot-app.git
-cd sprint-boot-app
+git clone https://github.com/emmanuelogar/jenkins-maven-sonarqube-argocd-helm-k8s.git
+cd jenkins-maven-sonarqube-argocd-helm-k8s/sprint-boot-app
 ```
 
 Execute the Maven targets to generate the artifacts
