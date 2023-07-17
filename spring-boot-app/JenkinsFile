@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh 'chown -R $USER:$USER .'
+        sh 'echo passed'
        // git branch: 'main', url: 'https://github.com/emmanuelogar/jenkins-maven-sonarqube-argocd-helm-k8s.git'
       }
     }
