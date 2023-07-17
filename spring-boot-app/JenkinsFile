@@ -31,7 +31,7 @@ pipeline {
     }
     stage('Build and Push Docker Image') {
       environment {
-        DOCKER_IMAGE = "ecloudy/ultimate-cicd:${BUILD_NUMBER}"
+        DOCKER_IMAGE = "emmanuelogar/ultimate-cicd:${BUILD_NUMBER}"
         // DOCKERFILE_LOCATION = "spring-boot-app/Dockerfile"
         REGISTRY_CREDENTIALS = credentials('docker-cred')
       }
@@ -47,7 +47,7 @@ pipeline {
     }
     stage('Update Deployment File') {
         environment {
-            GIT_REPO_NAME = "spring-boot-app"
+            GIT_REPO_NAME = "jenkins-maven-sonarqube-argocd-helm-k8s"
             GIT_USER_NAME = "emmanuelogar"
         }
         steps {
